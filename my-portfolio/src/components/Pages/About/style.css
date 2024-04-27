@@ -1,0 +1,250 @@
+.Firstcontainer{
+    background-color: rgb(0, 0, 0);
+    width: 70%;
+    height: 900px;
+    padding: 15px;
+    margin: 15px 15px 15px 0px ;
+    overflow-y:scroll;
+    border-radius: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar{
+    width:650px;
+    height:80px;
+    background-color:rgb(36, 36, 36);
+    padding-right: 51px;
+}
+
+li{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+    padding-inline: 25px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+/* li:hover{
+    border-radius: 20px 0px 20px 0px;
+} */
+
+li{
+    display: inline;
+    margin-inline: 35px;
+    font-weight: 700;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navMenu{
+    transition: 1s;
+}
+
+.navMenu:hover{
+    color: aqua;
+    cursor: pointer;
+    box-shadow: 0 2px 15px 0 rgba(12, 251, 255, 0.86), 0 4px 15px 0 rgba(5, 205, 255, 0.766);
+}
+
+
+p{
+    color: rgb(150, 150, 150);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.buble{
+    width: 300px;
+    height: 300px;
+    /* border: 7px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background-image: linear-gradient(45deg, #5cd2e7, #25ccff);
+    animation: animate 5s ease-in-out infinite;
+    transition: 3s;
+    box-shadow: 0 2px 35px 0 #0cfbffdb, 0 4px 15px 0 rgba(5, 205, 255, 0.766);
+}
+@keyframes animate{
+    0%{
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 70%;
+        background-image: linear-gradient(45deg, #79d5fd, #5fdaf5 50%, #42cee3 90%);
+    }
+    100%{
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+
+.innerContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-inline: 25px;
+}
+
+.animated-text{
+    font-size: 24px;
+    font-weight: 600;
+    min-width: 280px;
+    color: white;
+}
+
+.animated-text span{
+    position: relative;
+}
+
+.animated-text span::before{
+    content: "Backend Developer";
+    color: rgba(12, 251, 255, 0.86);
+    animation: words 20s infinite;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    border-left: 2px solid #0cfbffdb;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #000000aa;
+    }
+}
+@keyframes words {
+    0%,20%{
+        content: 'Frotend Developer';
+    }
+    21%,40%{
+        content: 'Backend Developer';
+    }
+    41%,60%{
+        content: 'Fullstack Developer';
+    }
+    61%,80%{
+        content: 'Mobile Application Developer';
+    }
+    81%,100%{
+        content: 'UI/UX Designer';
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+.socialMedia{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+.gmailContainer{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    background-color:  rgb(36, 36, 36);;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 30px;
+    transition: 1s;
+}
+
+.git{
+    background-image: url('../../common/assets/images/gitblack.png');
+    width: 30px;
+    height: 30px;
+    background-size: cover; /* This will make sure the image covers the entire container */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    background-position: center; /* This will center the image */
+    transition: 1s;
+}
+
+.git:hover{
+    background-image: url('../../common/assets/images/gitaqua.png');
+    width: 30px;
+    height: 30px;
+    background-size: cover; /* This will make sure the image covers the entire container */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    background-position: center; /* This will center the image */
+}
+
+.gmailContainer:hover{
+    box-shadow: 0 1px 15px 2px rgba(12, 251, 255, 0.86), 0 1px 15px 2px rgba(5, 205, 255, 0.766);
+}
+
+.linkedin{
+    background-image: url('../../common/assets/images/linkedinblack.png');
+    width: 30px;
+    height: 30px;
+    background-size: cover; /* This will make sure the image covers the entire container */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    background-position: center; /* This will center the image */
+    transition: 1s;
+}
+
+.linkedin:hover{
+    background-image: url('../../common/assets/images/linkedinAqua.png');
+    width: 30px;
+    height: 30px;
+    background-size: cover; /* This will make sure the image covers the entire container */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    background-position: center; /* This will center the image */
+}
+
+.whatsapp{
+    background-image: url('../../common/assets/images/whatsappblack.png');
+    width: 30px;
+    height: 30px;
+    background-size: cover; /* This will make sure the image covers the entire container */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    background-position: center; /* This will center the image */
+    transition: 1s;
+}
+
+.whatsapp:hover{
+    background-image: url('../../common/assets/images/whatsappaqua.png');
+    width: 30px;
+    height: 30px;
+    background-size: cover; /* This will make sure the image covers the entire container */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    background-position: center; /* This will center the image */
+}
+
+.instagram{
+    background-image: url('../../common/assets/images/instagramblack.png');
+    width: 30px;
+    height: 30px;
+    background-size: cover; /* This will make sure the image covers the entire container */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    background-position: center; /* This will center the image */
+    transition: 1s;
+}
+
+.instagram:hover{
+    background-image: url('../../common/assets/images/instagramaqua.png');
+    width: 30px;
+    height: 30px;
+    background-size: cover; /* This will make sure the image covers the entire container */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    background-position: center; /* This will center the image */
+}

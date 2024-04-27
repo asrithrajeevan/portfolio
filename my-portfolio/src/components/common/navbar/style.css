@@ -1,0 +1,14 @@
+.navBarContainer{
+    position:relative;
+    top:25px;
+    width:90%;
+    height:40px;
+    padding: 20px;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    margin-inline-start: 45px;
+    border-radius: 25px;
+    z-index: 999;
+    background-color: black;
+}

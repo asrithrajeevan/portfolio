@@ -1,0 +1,124 @@
+.profileContainer{
+    position :sticky;
+    top: 10px;
+    width: 30%;
+    height: 760px;
+    padding: 15px;
+    margin: 15px 15px 15px 15px;
+    overflow-y: scroll;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profileDetailsContainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    top: -100px;
+    border-radius: 20px;
+    justify-content: center;
+}
+.profilePhotoContainer{
+    width: 190px;
+    height: 220px;
+    border-radius: 25px;
+    position: relative;
+    z-index: 99;
+    border: 8px solid rgb(36, 36, 36);
+    overflow: hidden;
+}
+
+.profileImage{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    border-radius: 25px;
+    object-fit :fill;
+    transition: 1s;
+}
+.profileImage:hover{
+    /* box-shadow: 0 2px 15px 0 rgba(12, 251, 255, 0.86), 0 4px 15px 0 rgba(5, 205, 255, 0.766); */
+    transform: scale(1.2);
+}
+
+.personalDtails{
+    margin-top: 100px;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+}
+
+#email{
+    text-decoration: none;
+}
+#email:hover{
+    color: aqua;
+}
+.button-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+button {
+    font-size: 12px;
+    background: rgb(36,36,36);
+    color: aqua;
+    border: 1px solid aqua;
+    padding: 0.85em 0.75em;
+    margin: 1rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 1px 10px 0 rgba(12, 251, 255, 0.86), 0 1px 10px 0 rgba(5, 205, 255, 0.766);
+    font-weight: 700;
+}
+button .rightbutton{
+    font-size: 12px;
+    background: rgb(36,36,36);
+    color: #fff;
+    border: 1px solid aqua;
+    padding: 0.85em 0.75em;
+    margin: 1rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px 0 rgba(12, 251, 255, 0.86), 0 4px 10px 0 rgba(5, 205, 255, 0.766);
+}
+button:hover {
+    color: #363636;
+}
+button::after {
+    content: "";
+    background:aqua;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+}
+button[class^="slide"]::after {
+    transition: all 0.35s;
+}
+button[class^="slide"]:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.35s;
+}
+button.slide_from_left::after {
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+}
+
