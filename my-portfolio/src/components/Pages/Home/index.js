@@ -9,7 +9,9 @@ const Home = () => {
   return (
     <div className='profileContainer'>
       <div className='profilePhotoContainer'>
-        <img src="https://media.licdn.com/dms/image/D5603AQHkgdFPGLjaFg/profile-displayphoto-shrink_800_800/0/1697518080463?e=2147483647&v=beta&t=j4ElpyS8ZPHbcJ4VDjJasiK0I4J77OJvaTSq9DoGgRE" className='profileImage' alt="React Image" />
+        <div>
+          <img src="https://media.licdn.com/dms/image/D5603AQHkgdFPGLjaFg/profile-displayphoto-shrink_800_800/0/1697518080463?e=2147483647&v=beta&t=j4ElpyS8ZPHbcJ4VDjJasiK0I4J77OJvaTSq9DoGgRE" className='profileImage' alt="React Image" />
+        </div>
       </div>
       <div className='profileDetailsContainer'>
         <div className='personalDtails'>

@@ -2,9 +2,9 @@
     position :sticky;
     top: 10px;
     width: 30%;
-    height: 760px;
+    height: 750px;
     padding: 15px;
-    margin: 15px 15px 15px 15px;
+    margin: 15px 0px 15px 15px;
     overflow-y: scroll;
     border-radius: 20px;
     display: flex;
@@ -25,12 +25,13 @@
 }
 .profilePhotoContainer{
     width: 190px;
-    height: 220px;
+    height: 230px;
     border-radius: 25px;
     position: relative;
     z-index: 99;
     border: 8px solid rgb(36, 36, 36);
     overflow: hidden;
+    background-color: rgb(36, 36, 36);
 }
 
 .profileImage{
