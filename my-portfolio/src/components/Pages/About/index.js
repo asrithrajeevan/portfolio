@@ -5,7 +5,8 @@ import './style.css'
 import portfolio from '../../common/assets/images/portfolioImg.png';
 import AOS from 'aos';
 import developer from '../../common/assets/images/developer.png'
-import Skills from '../../common/skillset';
+import SkillContainer from './skillContainer';
+import Experience from './experience';
 
 
 const About = () => {
@@ -95,25 +96,11 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className='row3' data-aos="fade-up" data-aos-duration="1500">
-            <div>
-              <p style={{color:'aqua', fontSize:30, lineHeight:0.3, fontWeight:'700', textAlign:'center'}}>Skills</p>
-              <p style={{color:'white', fontSize:20, lineHeight:0.3, fontWeight:'600', textAlign:'center'}}>Here are some of my skills</p>
-            </div>
-            <div className='skillContainer'>
-              <div className='skillContainer1'>
-                <div data-aos="fade-right" data-aos-duration="1500">
-                  <Skills name={'frontendContainer'}/>
-                </div>
-                <div data-aos="fade-left" data-aos-duration="1500">
-                  <Skills name={'backendContainer'}/>
-                </div>
-              </div>
-              <div data-aos="fade-up" data-aos-duration="1500">
-                <Skills name={'otherContainer'}/>
-              </div>
-            </div>
-          </div>
+          {/* Skill container */}
+          <SkillContainer />
+          {/* experiance */}
+          <Experience />
+          
         </div>
       </div>
     </>

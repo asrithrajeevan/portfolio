@@ -6,6 +6,9 @@ import whatsapp from '../../common/assets/images/whatsapp.png';
 
 
 const Home = () => {
+  const redirectToURL = () => {
+    window.open('https://docs.google.com/document/d/1RU4yVmVGCPB16TauP6iRFpC65CQlIR3eCsKdD_ES0lk/edit','_blank');
+  };
   return (
     <div className='profileContainer'>
       <div className='profilePhotoContainer'>
@@ -35,7 +38,7 @@ const Home = () => {
             </a>
           </div>
           <div className='button-container'>
-            <button class="slide_from_left">Download CV</button>
+            <button class="slide_from_left" onClick={redirectToURL}>Check My CV</button>
             <button class="slide_from_left">Hire Me Now</button>
           </div>
 
