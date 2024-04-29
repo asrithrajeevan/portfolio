@@ -8,6 +8,7 @@ import js from '../../common/assets/images/js.png'
 import css from '../../common/assets/images/css.png'
 import redux from '../../common/assets/images/redux.png'
 import native from '../../common/assets/images/react.png'
+import jquery from '../../common/assets/images/jquery.png'
 
 // backend
 import python from '../../common/assets/images/python.png'
@@ -30,7 +31,7 @@ import git from '../../common/assets/images/git.png'
 
 
 const Skills = ({name}) => {
-    const frontend = [{name : 'React Js',img:react}, {name:'HTML', img : html}, {name:'Bootstrap', img:bootstrap}, {name:'Java Script', img:js}, {name:'CSS', img:css},{name:'React Native', img : native}, {name:'Redux', img : redux}]
+    const frontend = [{name : 'React Js',img:react}, {name:'HTML', img : html}, {name:'Bootstrap', img:bootstrap}, {name:'Java Script', img:js}, {name:'CSS', img:css},{name:'React Native', img : native}, {name:'Redux', img : redux}, {name: 'jQuery', img: jquery}]
     const backend = [{name:'Python', img:python}, {name:'Node Js', img:node}, {name:'Firebase', img:firebase}, {name:'My Sql', img:mysql}, {name:'Java', img:java}, {name:'Django', img:django}, {name:'Flask', img:flask}]
     const other = [{name:'MySql Workbench', img:mySqlWorkbench}, {name:'VS Code Js', img:vscode}, {name:'Xcode', img:Xcode}, {name:'Android Studio', img:AndroidStudio}, {name:'JWT Auth', img:jwt}, {name:'Postman', img:postman}, {name:'Google Cloud Platform', img:gcp},{name:'GitHub', img:git}]
     const mapitem = name === 'frontendContainer'? frontend 

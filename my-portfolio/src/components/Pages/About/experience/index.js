@@ -6,16 +6,16 @@ import inmakes from '../../../common/assets/images/inmakes.png'
 const Experience = () => {
   return (
     <div className='row4'>
-        <div style={{width:'50%', backgroundColor:'red'}} data-aos="fade-up" data-aos-duration="1500">
+        <div style={{width:'50%'}} data-aos="fade-up" data-aos-duration="1500">
             <p style={{color:'aqua', fontSize:30, fontWeight:'700', textAlign:'center'}}>Experience</p>
             <p style={{color:'grey', fontSize:17, fontWeight:'600', textAlign:'center'}}>My work experience as a software engineer and working on different companies and projects.</p>
         </div>
-        <div className='aaaa'>
-            <div data-aos="fade-up" data-aos-duration="1500">
+        <div>
+            <div data-aos="fade-up" data-aos-duration="1500" style={{display:'flex', justifyContent:'center'}}>
                 <div className='experienceContainer'>
                     <div style={{display:'flex', margin:15, alignItems:'center'}}>
                         <div>
-                            <img src={integerhouse} style={{width: 65, height:65, objectFit:'contain'}}/>
+                            <img src={integerhouse} style={{width: 65, height:65, objectFit:'contain'}} alt={'integer'}/>
                         </div>
                         <div>
                             <label style={{color:'grey', fontSize:16, fontWeight:'700', marginInline:10}}>Python Fullstack Developer</label><br/>
@@ -32,11 +32,11 @@ const Experience = () => {
                     </div>
                 </div>
             </div>
-            <div data-aos="fade-up" data-aos-duration="1500">
+            <div data-aos="fade-up" data-aos-duration="1500" style={{display:'flex', justifyContent:'center'}}>
                 <div className='experienceContainer'>
                     <div style={{display:'flex', margin:15, alignItems:'center'}}>
                         <div>
-                            <img src={inmakes} style={{width: 65, height:65, objectFit:'contain'}}/>
+                            <img src={inmakes} style={{width: 65, height:65, objectFit:'contain'}} alt={'inmakes'} />
                         </div>
                         <div>
                             <label style={{color:'grey', fontSize:16, fontWeight:'700', marginInline:10}}>React Native Developer</label><br/>
@@ -53,11 +53,11 @@ const Experience = () => {
                     </div>
                 </div>
             </div>
-            <div data-aos="fade-up" data-aos-duration="1500">
+            <div data-aos="fade-up" data-aos-duration="1500" style={{display:'flex', justifyContent:'center'}}>
                 <div className='experienceContainer'>
                     <div style={{display:'flex', margin:15, alignItems:'center'}}>
                         <div>
-                            <img src={integerhouse} style={{width: 65, height:65, objectFit:'contain'}}/>
+                            <img src={integerhouse} style={{width: 65, height:65, objectFit:'contain'}} alt={'integerHouse'}/>
                         </div>
                         <div>
                             <label style={{color:'grey', fontSize:16, fontWeight:'700', marginInline:10}}>Python Developer</label><br/>

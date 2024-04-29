@@ -4,7 +4,7 @@
     width: 30%;
     height: 750px;
     padding: 15px;
-    margin: 15px 0px 15px 15px;
+    /* margin: 15px 0px 15px 15px; */
     overflow-y: scroll;
     border-radius: 20px;
     display: flex;

@@ -1,14 +1,17 @@
 .Firstcontainer{
     background-color: rgb(0, 0, 0);
     width: 70%;
-    /* height: 2000px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 15px;
     margin: 15px 15px 15px 0px ;
     overflow: hidden;
     overflow-y:hidden;
     border-radius: 20px;
     margin-top: 30px;
-    justify-content: center;
+    padding-inline: 45px;
 }
 
 .navbarContainer{
@@ -72,17 +75,14 @@ p{
 .buble{
     width: 300px;
     height: 300px;
-    /* border: 7px solid white; */
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 150px;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     background-image: linear-gradient(45deg, #5cd2e7, #25ccff);
     animation: animate 5s ease-in-out infinite;
     transition: 3s;
     box-shadow: 0 2px 35px 0 #0cfbffdb, 0 4px 15px 0 rgba(5, 205, 255, 0.766);
-    margin-left: 45px;
 }
 @keyframes animate{
     0%{
@@ -98,25 +98,34 @@ p{
 }
 
 .innerContainer{
-    /* display: flex; */
-    /* flex-direction: row; */
     width: 100%;
-    /* justify-content: space-between; */
-    /* margin-inline: 25px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .row1{
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content:first baseline;
-    margin-inline: 25px;
+    justify-content:space-between;
 }
+.introduction{
+    margin-top: 100px;
+    width: 60%;
 
+}
+.bubleContainer{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
 .animated-text{
     font-size: 24px;
     font-weight: 600;
-    min-width: 280px;
+    /* min-width: 280px; */
     color: white;
 }
 
@@ -266,28 +275,14 @@ p{
     display: flex;
     flex-direction: row;
     width: 100%;
-    /* justify-content:center; */
-    align-items: center;
-    margin-inline: 25px;
     margin-top: 100px;
 }
 .row3{
-    width: 95%;
-    justify-content:center;
-    align-items: center;
-    margin-inline: 25px;
+    width: 100%;
     margin-top: 100px;
-    padding: 10px;
 }
+
 .skillContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.skillContainer1{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 20px;
+    display:'flex';
+    justify-content:'space-between';
 }

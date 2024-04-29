@@ -33,7 +33,7 @@ const About = () => {
         </div>
         <div className='innerContainer'>
           <div className='row1'>
-            <div style={{marginTop:120, width:525}}>
+            <div className='introduction'>
               <div data-aos="zoom-in" data-aos-duration="1500" style={{marginBottom:15}}><h1 style={{color:'white',display:'inline'}}>Hi! I am </h1><h1 className='firstLetter' style={{color:'white',display:'inline'}}>Asrith Rjeevan</h1>
               </div>
               <div data-aos="zoom-in" data-aos-duration="1500" className='animated-text'>
@@ -79,10 +79,14 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" className='buble'>
-              <img src={portfolio} alt='email' style={{width:400, height:300, marginRight:5, objectFit:'contain', display:'flex', position:'relative', top:-65}}/>
+            <div className='bubleContainer'>
+              <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" className='buble'>
+                <img src={portfolio} alt='email' style={{width:400, height:300, marginRight:5, objectFit:'contain', display:'flex', position:'relative', top:-65}}/>
+              </div>
             </div>
           </div>
+
+          {/* About Me */}
           <div className='row2'>
             <div data-aos="fade-right" data-aos-duration="1500">
               <img src={developer} style={{objectFit:'contain', width:200, height:200}}/>
@@ -100,7 +104,9 @@ const About = () => {
           <SkillContainer />
           {/* experiance */}
           <Experience />
-          
+          {/* Projects */}
+          <Experience />
+
         </div>
       </div>
     </>
