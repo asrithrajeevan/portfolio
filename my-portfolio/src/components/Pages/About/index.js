@@ -7,6 +7,7 @@ import AOS from 'aos';
 import developer from '../../common/assets/images/developer.png'
 import SkillContainer from './skillContainer';
 import Experience from './experience';
+import Projects from './projects';
 
 
 const About = () => {
@@ -105,7 +106,7 @@ const About = () => {
           {/* experiance */}
           <Experience />
           {/* Projects */}
-          <Experience />
+          <Projects />
 
         </div>
       </div>

@@ -6,6 +6,15 @@ body{
   display: flex;
   justify-content: space-between;
 }
+
+/* Media query for screens up to 800px */
+@media (max-width: 500px) {
+  .App {
+    flex-direction: column; /* or any other style you want to apply */
+  }
+}
+
+
 a{
   color: white;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
