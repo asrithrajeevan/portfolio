@@ -1,0 +1,31 @@
+.experienceContainer{
+    width:80%;
+    margin:10px;
+    border: 1px solid aqua;
+    border-radius: 15px;
+}
+.headerContainer{
+    width: 50%;
+}
+.details{
+    display: flex;
+    margin:15px;
+    align-items:'center';
+}
+.labelfont{
+    font-size:16px;
+}
+
+@media (max-width: 1000px) {
+    .headerContainer{
+        width: 100%;
+    }
+    .details{
+        display:flex;
+        margin:15px;
+        align-items:'center';
+    }
+    .labelfont{
+        font-size:3vw;
+    }
+}

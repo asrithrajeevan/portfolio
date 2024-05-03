@@ -8,7 +8,7 @@ body{
 }
 
 /* Media query for screens up to 800px */
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   .App {
     flex-direction: column; /* or any other style you want to apply */
   }

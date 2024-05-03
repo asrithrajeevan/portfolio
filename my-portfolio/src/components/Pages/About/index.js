@@ -8,6 +8,8 @@ import developer from '../../common/assets/images/developer.png'
 import SkillContainer from './skillContainer';
 import Experience from './experience';
 import Projects from './projects';
+import Education from './education';
+import Contact from './contact';
 
 
 const About = () => {
@@ -45,40 +47,6 @@ const About = () => {
                   I graduated in 2022 and have since embarked on a journey in the world of software development. Specializing in Python Django and React Native for mobile applications, I've cultivated a diverse skill set that spans both backend and frontend technologies. My passion for crafting efficient and user-friendly applications drives me to continually expand my expertise and deliver high-quality software solutions."
                 </p>
               </div>
-              <div className='socialMedia'>
-                <div data-aos="zoom-in-down" data-aos-duration="1500">
-                  <div className='gmailContainer'>
-                    <a id='email' href='https://github.com/asrithrajeevan/' target="_blank">
-                      <div className='git'>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div data-aos="zoom-in-up" data-aos-duration="1500">
-                  <div className='gmailContainer'>
-                    <a id='email' href='https://www.linkedin.com/in/asrith-rajeevan-35a429253/' target="_blank">
-                      <div className='linkedin'>
-                      </div>            
-                    </a>
-                  </div>
-                </div>
-                <div data-aos="zoom-in-down" data-aos-duration="1500">
-                  <div className='gmailContainer'>
-                    <a id='email' href='https://wa.me/8590406845' target="_blank">
-                      <div className='whatsapp'>
-                      </div>            
-                    </a>
-                  </div>
-                </div>
-                <div data-aos="zoom-in-up" data-aos-duration="1500">
-                  <div className='gmailContainer'>
-                    <a id='email' href='https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJqXzDCXkwqSMbnVLhzDVvnRJJRPBVRFQFrqXGfttMjXDKPCGJpZPCxPstQSvJpqhWKPRgB' target="_blank">
-                      <div className='instagram'>
-                      </div>              
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
             <div className='bubleContainer'>
               <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" className='buble'>
@@ -86,13 +54,48 @@ const About = () => {
               </div>
             </div>
           </div>
+          {/* socialMediaGrid */}
+          <div className='socialMediaGrid'>
+            <div data-aos="zoom-in-down" data-aos-duration="1500">
+              <div className='gmailContainer'>
+                <a id='email' href='https://github.com/asrithrajeevan/' target="_blank">
+                  <div className='git'>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div data-aos="zoom-in-up" data-aos-duration="1500">
+              <div className='gmailContainer'>
+                <a id='email' href='https://www.linkedin.com/in/asrith-rajeevan-35a429253/' target="_blank">
+                  <div className='linkedin'>
+                  </div>            
+                </a>
+              </div>
+            </div>
+            <div data-aos="zoom-in-down" data-aos-duration="1500">
+              <div className='gmailContainer'>
+                <a id='email' href='https://wa.me/8590406845' target="_blank">
+                  <div className='whatsapp'>
+                  </div>            
+                </a>
+              </div>
+            </div>
+            <div data-aos="zoom-in-up" data-aos-duration="1500">
+              <div className='gmailContainer'>
+                <a id='email' href='https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJqXzDCXkwqSMbnVLhzDVvnRJJRPBVRFQFrqXGfttMjXDKPCGJpZPCxPstQSvJpqhWKPRgB' target="_blank">
+                  <div className='instagram'>
+                  </div>              
+                </a>
+              </div>
+            </div>
+          </div>
 
           {/* About Me */}
           <div className='row2'>
-            <div data-aos="fade-right" data-aos-duration="1500">
+            <div data-aos="fade-right" data-aos-duration="1500" style={{justifyContent:'center', alignItems:'center', display:'flex'}}>
               <img src={developer} style={{objectFit:'contain', width:200, height:200}}/>
             </div>
-            <div data-aos="fade-left" data-aos-duration="1500" style={{width:650, marginLeft:35}}>
+            <div className='intro' data-aos="fade-left" data-aos-duration="1500" >
               <p style={{lineHeight:0.3, fontSize:12}}>LET ME INTRODUCE MY SELF</p>
               <p style={{color:'aqua', fontSize:30, lineHeight:0.3, fontWeight:'700'}}>About Me</p>
               <p style={{color:'white', fontSize:20, lineHeight:0.3, fontWeight:'600'}}>A Story of Good</p>
@@ -107,7 +110,10 @@ const About = () => {
           <Experience />
           {/* Projects */}
           <Projects />
-
+          {/* Education */}
+          <Education />
+          {/* contact form */}
+          <Contact />
         </div>
       </div>
     </>

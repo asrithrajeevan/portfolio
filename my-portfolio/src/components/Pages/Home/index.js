@@ -38,15 +38,11 @@ const Home = () => {
             </a>
           </div>
           <div className='button-container'>
-            <button class="slide_from_left" onClick={redirectToURL}>Check My CV</button>
-            <button class="slide_from_left">Hire Me Now</button>
+            <button class="slide_from_left" id='button' onClick={redirectToURL}>Check My CV</button>
+            <button class="slide_from_left" id='button'>Hire Me Now</button>
           </div>
 
         </div>
-          {/* <div className='buttonContainer' style={{width:250, height:35, backgroundColor:'white', marginTop:20}}>
-
-          </div> */}
-
       </div>
     </div>
   )

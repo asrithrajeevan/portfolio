@@ -3,8 +3,70 @@
     display: flex;
     justify-content:center;
     align-items: center;
-    margin-inline: 25px;
     margin-top: 100px;
-    padding-inline: 10px;
     flex-direction: column;
+}
+.projectGridButton{
+    height:40;
+    border-radius:15; 
+    width: 500px;
+    display: grid;
+    grid-template-columns:1fr 2fr 2fr;
+    grid-template-rows: 50px;
+    border: 1px solid aqua;
+    border-radius: 15px;
+    overflow: hidden;
+}
+@media (max-width: 700px) {
+    .projectGridButton{
+        height:40;
+        border-radius:15; 
+        width: 300px;
+        display: grid;
+        grid-template-columns:1fr 2fr 2fr;
+        grid-template-rows: 50px;
+        border: 1px solid aqua;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+}
+.projectGridButton .button1{
+    border: 0.5px solid aqua;
+    cursor: pointer;
+}
+.projectGridButton .button1:hover{
+    background-color: rgba(60, 60, 60, 0.636);
+}
+.projectGridButton .button2{
+    border: 0.5px solid aqua;
+    cursor: pointer;
+}
+.projectGridButton .button2:hover{
+    background-color: rgba(60, 60, 60, 0.636);
+}
+.projectGridButton .button3{
+    border: 0.5px solid aqua;
+    cursor: pointer;
+}
+.projectGridButton .button3:hover{
+    background-color: rgba(60, 60, 60, 0.636);
+}
+.projectGrid{
+    margin-top: 35px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+.projectContainer{
+    background-color: rgb(36, 36, 36);
+    width: 250px;
+    height: 450px;
+    margin: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
