@@ -1,7 +1,5 @@
 import React from 'react'
 import './style.css'
-import integerhouse from '../../../common/assets/images/integerHouse.png'
-import inmakes from '../../../common/assets/images/inmakes.png'
 import Container from '../../../common/containerBlock'
 
 const Experience = () => {

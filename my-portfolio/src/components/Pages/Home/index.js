@@ -18,7 +18,7 @@ const Home = () => {
       </div>
       <div className='profileDetailsContainer'>
         <div className='personalDtails'>
-          <h2 style={{color:'white'}}>ASRITH RAJEEVAN</h2>
+          <p className='responsiveName' style={{color:'white', fontWeight:'800', fontSize:'2vw'}}>ASRITH RAJEEVAN</p>
           <div style={{display:'flex', justifyContent:'center', margin:5,}}>
             <img src={email} alt='email' style={{width:15, height:15,marginRight:5}}/>
             <a id='email' href='https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJqXzDCXkwqSMbnVLhzDVvnRJJRPBVRFQFrqXGfttMjXDKPCGJpZPCxPstQSvJpqhWKPRgB' target="_blank">
@@ -41,7 +41,6 @@ const Home = () => {
             <button class="slide_from_left" id='button' onClick={redirectToURL}>Check My CV</button>
             <button class="slide_from_left" id='button'>Hire Me Now</button>
           </div>
-
         </div>
       </div>
     </div>

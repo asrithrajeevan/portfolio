@@ -2,7 +2,7 @@
     position :sticky;
     top: 10px;
     width: 30%;
-    height: 750px;
+    /* height: 750px; */
     padding: 15px;
     overflow-y: scroll;
     border-radius: 20px;
@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(36, 36, 36);
+    background-color: rgb(122, 26, 26);
 }
 .profileDetailsContainer{
     display: flex;
@@ -24,18 +24,19 @@
 }
 .profilePhotoContainer{
     width: 190px;
-    height: 230px;
+    height: auto;
     border-radius: 25px;
     position: relative;
     z-index: 99;
     border: 8px solid rgb(36, 36, 36);
     overflow: hidden;
 }
+
 @media (max-width: 1000px) {
     .profileContainer{
         position :static;
         width: 100%;
-        height: auto;
+        height: 100px;
         /* padding: 15px; */
         border-radius: 0px;
         justify-content: center;
@@ -84,11 +85,13 @@
     width: 100%;
     padding: 25px;
     text-align: center;
+    height: 150px;
 }
-@media (max-width : 500px){
+@media (max-width : 1000px){
     .personalDtails{
         margin-top: 0px;
         /* width: 100%; */
+        height: 150px;
         padding: 2px;
         text-align: center;
         /* background-color: #c95d5d; */
@@ -179,4 +182,3 @@ button.slide_from_left::after {
     left: -100%;
     right: 100%;
 }
-

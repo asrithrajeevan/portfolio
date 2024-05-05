@@ -33,3 +33,15 @@ input, textarea {
         max-width: 450px; /* Set maximum width for larger screens */
     }
 }
+
+.ContactSendButton {
+    width: 95%;
+    background-image: linear-gradient(to right, rgb(255, 0, 247), orange); /* Specify the direction and colors of the gradient */
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
