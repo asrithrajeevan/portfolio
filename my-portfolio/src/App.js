@@ -8,6 +8,7 @@ import NavBar from './components/common/navbar';
 
 function App() {
   const [state, setState]=useState(10)
+  const [goToContact, setGoToContact] = useState(false)
   return (
     <div className="App">
       {/* <button onClick={()=>history.push('/about')} /> */}
@@ -17,8 +18,8 @@ function App() {
           {/* <Route element={<Home/>} path='/home' /> */}
           {/* <Route element={<About/>} path='/about' /> */}
         {/* </Routes> */}
-        <Home />
-        <About />
+        <Home goToContact={goToContact} setGoToContact={setGoToContact}/>
+        <About goToContact={goToContact}/>
       </AppCotext.Provider>
     </div>
   );

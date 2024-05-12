@@ -27,4 +27,4 @@ const SkillContainer = () => {
   )
 }
 
-export default SkillContainer
+export default React.memo(SkillContainer)

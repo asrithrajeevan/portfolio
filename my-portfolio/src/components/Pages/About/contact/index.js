@@ -18,9 +18,7 @@ const Contact = () => {
             </div>
         </div>
     </div>
-
-
   )
 }
 
-export default Contact
+export default React.memo(Contact)

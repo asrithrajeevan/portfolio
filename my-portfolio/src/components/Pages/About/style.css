@@ -1,145 +1,105 @@
-.Firstcontainer{
-    background-color: rgb(0, 0, 0);
+.topContainer{
     width: 70%;
+}
+.Firstcontainer{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 15px;
-    margin: 15px 15px 15px 0px ;
     overflow: hidden;
-    /* overflow-y:hidden; */
     border-radius: 20px;
-    margin-top: 30px;
-    /* padding-inline: 45px; */
 }
-@media (max-width: 1000px) {
-    .Firstcontainer{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 15px;
-        /* margin: 15px ; */
-        overflow: hidden;
-        overflow-y:hidden;
-        border-radius: 20px;
-        margin-top: 30px;
-        /* padding-inline: 45px; */
-    }
-}
-
 .navbarContainer{
     display: flex;
+    position: sticky;
+    top: 0px;
     justify-content: center;
     width: 100%;
+    background-color: black;
+    transition: background-color 0.5s;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    z-index: 50;
 }
-.navbar{
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    width: 80%;
-    height:100px;
-    background-color:rgb(36, 36, 36);
-    position: relative;
-    top: -35px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+@media (max-width: 1000px) {
+    .topContainer{
+        width: 100%;
+    }
+    .navbarContainer{
+        width: 100%;
+    }
 }
 ul{
     padding: 0px;
 }
-li{
+.navMenu {
     color: white;
-    background-color: rgb(0, 0, 0);
-    padding: 15px;
-    border-radius: 0px 0px 20px 20px;
-    display: inline;
-    margin-inline: 45px;
+    width: 80px;
+    padding: 12px;
+    margin-inline: 25px;
+    font-size: 15px;
     font-weight: 700;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+    transition: 1s;
+    background-color: rgb(0, 0, 0);
+    display: inline-block; /* or inline */
+    text-align: center;
+    border-radius: 20px;
 }
-@media (max-width: 1200px) {
-    li{
-        color: white;
-        background-color: rgb(0, 0, 0);
-        padding: 15px;
-        padding-inline:25px;
-        border-radius: 0px 0px 20px 20px;
-        font-size: 1.1rcap;
-        margin-inline: 35px;
-        
+@media (max-width: 1400px) {
+    .navMenu {
+        width: 60px;
+        padding: 10px;
+        margin-inline: 20px;
+        font-size: 13px;
+    }
+}
+@media (max-width: 1050px) {
+    .navMenu {
+        width: 40px;
+        padding: 8px;
+        margin-inline: 10px;
+        font-size: 8px;
     }
 }
 @media (max-width: 1000px) {
-    li{
-        color: white;
-        background-color: rgb(0, 0, 0);
-        padding: 20px;
-        padding-inline:30px;
-        border-radius: 0px 0px 20px 20px;
-        font-size: 1.3rcap;
-        margin-inline: 35px;
-    
+    .navMenu {
+        width: 60px;
+        padding: 12px;
+        margin-inline: 15px;
+        font-size: 10px;
     }
 }
 @media (max-width: 700px) {
-    li{
-        color: white;
-        background-color: rgb(0, 0, 0);
-        padding: 15px;
-        padding-inline:15px;
-        border-radius: 0px 0px 20px 20px;
-        font-size: 1rcap;
-        margin-inline: 25px;
-    
+    .navMenu {
+        width: 40px;
+        padding: 10px;
+        margin-inline: 10px;
+        font-size: 8px;
     }
 }
-@media (max-width: 550px) {
-    li{
-        color: white;
-        background-color: rgb(0, 0, 0);
-        padding: 15px;
-        padding-inline:25px;
-        border-radius: 0px 0px 20px 20px;
-        font-size: 1rcap;
-        margin-inline: 15px;
-    
-    }
-    .navbar{
-        height:70px;
-        width: 90%;
+@media (max-width: 500px) {
+    .navMenu {
+        width: 40px;
+        padding: 10px;
+        margin-inline: 2px;
+        font-size: 8px;
     }
 }
-@media (max-width: 450px) {
-    li{
-        color: white;
-        background-color: rgb(0, 0, 0);
-        padding: 15px;
-        padding-inline:15px;
-        border-radius: 0px 0px 20px 20px;
-        font-size: 1rcap;
-        margin-inline: 5px;
-    
+@media (max-width: 390px) {
+    .navMenu {
+        width: 30px;
+        padding: 10px;
+        margin-inline: 1px;
+        font-size: 5px;
     }
-    .navbar{
-        height:70px;
-    }
-}
-/* li:hover{
-    border-radius: 20px 0px 20px 0px;
-} */
-
-.navMenu{
-    transition: 1s;
 }
 
 .navMenu:hover{
     color: aqua;
     cursor: pointer;
-    box-shadow: 0 2px 15px 0 rgba(12, 251, 255, 0.86), 0 4px 15px 0 rgba(5, 205, 255, 0.766);
+    box-shadow: 0 2px 10px 0 rgba(12, 251, 255, 0.86), 0 1px 2px 0px rgba(5, 205, 255, 0.766);
 }
 
 
@@ -182,15 +142,36 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: rgb(0, 0, 0);
+    /* margin-top: 70px; */
+}
+.bubleContainer{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+.bubleImg{
+    width:400px;
+    height:300px;
 }
 @media (max-width: 700px) {
     .innerContainer{
         width: 100%;
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
         justify-content: center;
     }
+    .bubleImg{
+        width:350px;
+        height:250px;
+    }
+    .buble{
+        width: 250px;
+        height: 250px;
+    }
+    
 }
 
 .row1{
@@ -198,19 +179,14 @@ p{
     flex-direction: row;
     width: 95%;
     justify-content:space-between;
+    margin-top: 15px;
 }
 .introduction{
     margin-top: 100px;
     width: 60%;
     
 }
-.bubleContainer{
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-}
+
 @media (max-width: 700px) {
     .row1{
         display: flex;
@@ -225,11 +201,11 @@ p{
         justify-content: center;
         align-items: center;
         margin-top: 50px;
+
     }
     .introduction{
         margin-top: 100px;
-        width: 100%;
-        
+        width: 90%;
     }
 }
 .animated-text{
@@ -244,6 +220,7 @@ p{
 }
 
 .animated-text span::before{
+    /* font-size: calc(100% + 8px); */
     content: "Backend Developer";
     color: rgba(12, 251, 255, 0.86);
     animation: words 20s infinite;
@@ -296,11 +273,10 @@ p{
     flex-direction: row;
     margin-top: 35px;
     justify-content: space-around;
-    background-color: chartreuse;
 } */
 .socialMediaGrid{
     display: flex;
-    width: 450%;
+    width: 100%;
 }
 
 .gmailContainer{
@@ -415,7 +391,7 @@ p{
     .row2{
         display: flex;
         flex-direction: column;
-        /* max-width: 900px; */
+        width: 90%;
         margin-top: 100px;
     }
 }

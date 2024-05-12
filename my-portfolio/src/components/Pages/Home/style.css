@@ -2,15 +2,15 @@
     position :sticky;
     top: 10px;
     width: 30%;
-    /* height: 750px; */
+    height: 750px;
     padding: 15px;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(122, 26, 26);
+    background-color: rgb(36, 36, 36);
 }
 .profileDetailsContainer{
     display: flex;
@@ -21,6 +21,7 @@
     top: -100px;
     border-radius: 20px;
     justify-content: center;
+    overflow: hidden;
 }
 .profilePhotoContainer{
     width: 190px;
@@ -31,39 +32,6 @@
     border: 8px solid rgb(36, 36, 36);
     overflow: hidden;
 }
-
-@media (max-width: 1000px) {
-    .profileContainer{
-        position :static;
-        width: 100%;
-        height: 100px;
-        /* padding: 15px; */
-        border-radius: 0px;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        /* background-color: blue; */
-    }
-    .profileDetailsContainer{
-        display: flex;
-        width: 1fr;
-        height: 100%;
-        position: static;
-        top: -100px;
-        border-radius: 20px;
-        justify-content: center;
-        /* background-color: rgb(0, 255, 64); */
-    }
-    .profilePhotoContainer{
-        /* width: 20rem; */
-        height: 100%;
-        /* position: relative; */
-        /* z-index: 99; */
-        /* border: 8px solid rgb(36, 36, 36); */
-        /* overflow: hidden; */
-    }
-  }
-
 .profileImage{
     width: 100%;
     height: 100%;
@@ -75,6 +43,60 @@
     object-fit :cover;
     transition: 1s;
 }
+.responsiveHomeName1 {
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+}
+.responsiveHomeName2 {
+    color: rgb(0, 229, 255);
+    font-weight: 800;
+    font-size: 16px;
+}
+@media (max-width: 1000px) {
+    .profileContainer{
+        position :static;
+        width: 100%;
+        height: 200px;
+        padding: 0px;
+        border-radius: 0px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        overflow: hidden;
+        margin-bottom: 5px;
+    }
+    .profileDetailsContainer{
+        display: flex;
+        width: 1fr;
+        height: 80%;
+        position: static;
+        top: -100px;
+        border-radius: 20px;
+        justify-content: center;
+        /* background-color: rgb(0, 255, 64); */
+    }
+    .profilePhotoContainer{
+        width: 1fr;
+        height: 1fr;
+        position: relative;
+        background-color: rgb(36, 36, 36);
+        justify-content: center;
+        /* z-index: 99; */
+        /* border: 8px solid rgb(36, 36, 36); */
+        /* overflow: hidden; */
+    }
+    .responsiveHomeName1 {
+        line-height: 10px;
+        font-size: 3vw;
+    }
+    .responsiveHomeName2 {
+        font-size: 2vw;
+        line-height: 1px;
+    }
+  }
+
+
 .profileImage:hover{
     /* box-shadow: 0 2px 15px 0 rgba(12, 251, 255, 0.86), 0 4px 15px 0 rgba(5, 205, 255, 0.766); */
     transform: scale(1.2);
@@ -97,6 +119,11 @@
         /* background-color: #c95d5d; */
     }
 }
+@media (max-width : 350px){
+    .profileDetailsContainer{
+        /* height: 60%; */
+    }
+}
 
 #email{
     text-decoration: none;
@@ -104,6 +131,14 @@
 #email:hover{
     color: aqua;
 }
+@media (max-width : 1000px){
+    #email{
+        line-height: 10px;
+        font-size: 2.5vw;
+        text-decoration: none;
+    }
+}
+
 .button-container{
     display: flex;
     justify-content: space-evenly;
@@ -112,8 +147,7 @@
 #button{
     font-size: 1rcap;
 }
-button {
-    font-size: 12px;
+button{
     background: rgb(36,36,36);
     color: aqua;
     border: 1px solid aqua;
@@ -126,20 +160,33 @@ button {
     box-shadow: 0 1px 10px 0 rgba(12, 251, 255, 0.86), 0 1px 10px 0 rgba(5, 205, 255, 0.766);
     font-weight: 700;
 }
-@media (max-width : 500px){
+.contactImg{
+    width:15px;
+    height:15px;
+    margin-right:5px;
+}
+@media (max-width : 1000px){
+    #button{
+        font-size: 2vw;
+    }
     button {
-        font-size: 12px;
-        background: rgb(36,36,36);
-        color: aqua;
-        border: 1px solid aqua;
         padding: 0.45em 0.75em;
-        margin: 1rem;
-        position: relative;
         z-index: 1;
-        overflow: hidden;
-        border-radius: 15px;
-        box-shadow: 0 1px 10px 0 rgba(12, 251, 255, 0.86), 0 1px 10px 0 rgba(5, 205, 255, 0.766);
-        font-weight: 700;
+    }
+    .button-container{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 3px;
+    }
+    .contactImg{
+        width:3vw;
+        height:3vw;
+        margin-right:5px;
+    }
+}
+@media (max-width : 300px){
+    button {
+        padding-inline: 25px;
     }
 }
 button .rightbutton{
