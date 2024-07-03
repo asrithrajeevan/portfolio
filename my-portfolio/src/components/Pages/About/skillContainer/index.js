@@ -11,10 +11,10 @@ const SkillContainer = () => {
       </div>
       <div>
         <div className='skillContainer' style={{display:'flex', justifyContent:'space-between'}}>
-          <div data-aos="fade-right" data-aos-duration="1500" style={{display:'flex', justifyContent:'center'}}>
+          <div data-aos="fade-up" data-aos-duration="1500" style={{display:'flex', justifyContent:'center'}}>
             <Skills name={'frontendContainer'}/>
           </div>
-          <div data-aos="fade-left" data-aos-duration="1500" style={{display:'flex', justifyContent:'center'}}>
+          <div data-aos="fade-up" data-aos-duration="1500" style={{display:'flex', justifyContent:'center'}}>
             <Skills name={'backendContainer'}/>
           </div>
         </div>
@@ -27,4 +27,4 @@ const SkillContainer = () => {
   )
 }
 
-export default SkillContainer
+export default React.memo(SkillContainer)

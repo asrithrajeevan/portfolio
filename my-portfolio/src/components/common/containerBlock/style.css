@@ -1,0 +1,33 @@
+.experienceContainer{
+    width:80%;
+    margin:10px;
+    border: 0px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    background-image: linear-gradient(to right, rgb(252, 113, 248), rgb(254, 196, 88)); /* Specify the direction and colors of the gradient */
+
+}
+.headerContainer{
+    width: 50%;
+}
+.details{
+    display: flex;
+    margin:15px;
+    align-items:'center';
+}
+.labelfont{
+    font-size:16px;
+}
+
+@media (max-width: 1000px) {
+    .headerContainer{
+        width: 100%;
+    }
+    .details{
+        display:flex;
+        margin:15px;
+        align-items:'center';
+    }
+    .labelfont{
+        font-size:3vw;
+    }
+}

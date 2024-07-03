@@ -39,14 +39,14 @@ const Skills = ({name}) => {
 
   return (
     <div className={name}>
-        <p style={{color:'grey', fontSize:16, fontWeight:'700', textAlign:'center', margin:5}}>{name==='backendContainer'? 'Backend' : name==='frontendContainer'? 'Frontend':'Others'}</p>
+        <p style={{color:'black', fontSize:16, fontWeight:'700', textAlign:'center', margin:5}}>{name==='backendContainer'? 'Backend' : name==='frontendContainer'? 'Frontend':'Others'}</p>
         <div className='skillset'>
         {
             mapitem.map((item)=>{
                 return(
                     <div className='skill'>
                         <img src={item.img} style={{objectFit:'contain', width:25, height:25, marginInline:5}} />
-                        <p>{item.name}</p>
+                        <p style={{color:'white'}}>{item.name}</p>
                     </div>
                 )
             })

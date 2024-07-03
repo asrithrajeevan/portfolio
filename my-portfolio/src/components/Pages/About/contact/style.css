@@ -1,0 +1,55 @@
+.contactContainer {
+    margin-top: 100px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactForm {
+    padding: 35px;
+    border-radius: 25px;
+    /* border: 1px solid aqua; */
+    max-width: 500px; /* Set maximum width for the form */
+    width: 100%; /* Occupy full width of the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(252, 113, 248), rgb(254, 196, 88)); /* Specify the direction and colors of the gradient */
+
+}
+
+input, textarea {
+    width: 100%; /* Occupy full width of the parent container */
+    background-color: rgb(36, 36, 36);
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: aqua;
+    padding: 10px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+@media screen and (min-width: 600px) {
+    input, textarea {
+        max-width: 450px; /* Set maximum width for larger screens */
+    }
+}
+
+.ContactSendButton {
+    width: 95%;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    background-image: linear-gradient(to right, rgb(252, 113, 248), rgb(254, 196, 88)); /* Specify the direction and colors of the gradient */
+}
+
+.ContactSendButton:hover{
+    color: rgb(36, 36, 36);
+    border: 1px solid rgb(36, 36, 36);
+}
